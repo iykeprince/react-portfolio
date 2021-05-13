@@ -1,0 +1,24 @@
+.join{
+    background: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+
+.join h2{
+    font-size: 36px;
+}
+
+form input{
+    margin: 20px 0px;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+
+
+}
+.join p{
+    padding: 10px;
+}

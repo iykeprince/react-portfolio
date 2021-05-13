@@ -1,0 +1,20 @@
+{
+    "courses": [
+        {
+            "title": "HTML for beginners",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit",
+            "imageUrl": "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
+            "description": "This course will put you up to speed for front-end development",
+            "price": 10500,
+            "id": 1
+        },
+        {
+            "title": "Flutter for beginners",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit",
+            "imageUrl": "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
+            "description": "This course will put you up to speed for front-end development",
+            "price": 20000,
+            "id": 2
+        }
+    ]
+}
