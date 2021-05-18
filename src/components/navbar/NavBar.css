@@ -10,11 +10,13 @@
 
 nav{
     background: white;
+    /* max-width: 100%; */
+    min-width: 100%;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     color: black;
-    /* position: relative; */
+    position: fixed;
     max-width: 100%;
     z-index: 99;
     
@@ -56,14 +58,15 @@ nav{
 
 .menu-list li:last-child a{
     font-weight: 300;
-    padding: 10px 25px;
+    /* margin: 30px; */
+    padding: 10px 10px;
     letter-spacing: 3px;
     font-weight: bold;
     text-transform: uppercase;
     background-color: tomato;
     transition: all 0.5s ease-in-out;
-    margin: 20px;
-    border-radius: 2px;
+    margin: 50px;
+    border-radius: 3px;
     color: white;
 }
 

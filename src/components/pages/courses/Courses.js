@@ -41,7 +41,7 @@ const Courses = () => {
 
     ])
     return (
-        <div>
+        <div id="course">
             <h2 className="heading-courses">Popular Courses</h2>
             <hr className="style-seven"/>
             <section className="courses">
