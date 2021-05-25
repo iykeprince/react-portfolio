@@ -4,66 +4,20 @@ Variables
 ===============
 */
 
-:root {
-  /* dark shades of primary color*/
-  
-  
-  --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
-  --clr-black: #222;
-  --transition: all 0.3s linear;
-  --spacing: 0.1rem;
-  --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-  --max-width: 1170px;
-  --fixed-width: 450px;
-  --clr-orange-1: hsl(12, 83%, 98%);
-  --clr-orange-2: hsl(14, 91%, 95%);
-  --clr-orange-3: hsl(12, 89%, 89%);
-  --clr-orange-4: hsl(13, 87%, 82%);
-  --clr-orange-5: hsl(13, 88%, 68%);
-  --clr-orange-6: hsl(13, 88%, 55%);
-  --clr-orange-7: hsl(13, 74%, 49%);
-  --clr-orange-8: hsl(13, 74%, 33%);
-  --clr-orange-9: hsl(13, 73%, 25%);
-  --clr-orange-10: hsl(13, 73%, 16%);
-}
 
-.courses {
-  /* margin: 4rem 0; */
+
+.courses{
   display: grid;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-  padding: 0 50px;
-
-
+  padding: 10px 50px;
 }
 @media screen and (min-width: 576px) {
   .courses {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+
 }
 
  .paper {
@@ -118,37 +72,20 @@ Variables
   cursor: pointer;
   margin-left: 40.5%;
   margin-right: 40%;
- }
- .fa-heart{
-   width: 30px;
-   font-size: 50px;
+  background-color: #12172b;
+  color: white;
  }
 
- hr.style-seven {
-  overflow: visible; /* For IE */
-  height: 30px;
-  border-style: solid;
-  border-color: #FFD43B;
-  border-width: 1px 0 0 0;
-  border-radius: 20px;
-  margin: 20px 50px;
-}
-hr.style-seven:before { /* Not really supposed to work, but does */
-  display: block;
-  content: "";
-  height: 30px;
-  margin-top: -31px;
-  border-style: solid;
-  border-color: #FFD43B;
-  border-width: 0 0 1px 0;
-  border-radius: 20px;
-}
-.heading-courses{
+ /* #course{
+  background-color: #42444E;
+} */
+/* .heading-courses{
   margin: 30px 70px;
   font-size: 25px;
   color: white;
   letter-spacing: 4px;
-}
+  
+} */
 ul li{
   display: inline-block;
 }
@@ -160,3 +97,124 @@ span{
   font-size: 15px;
   /* padding: 5px; */
 }
+/* @media screen and (min-width: 359px) {
+  .heading-courses{
+    font-size: 20px;
+    text-align: left;
+  }
+  .course button{
+    margin-left: 20%;
+    margin-right: 50%;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 10px;
+   }
+   li h2{
+    font-size: 20px;
+    padding-right: 10px;
+  
+  }
+  span{
+    font-size: 10px;
+  }
+  .course h1 {
+    font-size: 10px;
+ }
+ 
+  .course p {
+    margin: 8px 0;
+    text-align: left;
+    color: #a0a6ab;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0 20px;
+
+ }
+  */
+
+/* @media screen and (max-width:598px) {
+  .heading-courses{
+    font-size: 20px;
+    text-align: center;
+  }
+  li h2{
+    font-size: 30px;
+    padding-right: 90px;
+  
+  }
+  .course h1 {
+    font-size: 20px;
+ }
+ 
+  .course p {
+    margin: 8px 0;
+    text-align: left;
+    color: #a0a6ab;
+
+    font-size: 15px;
+    padding-left: 20px;
+ }
+    
+} */
+
+/* @media screen and (min-width:393px) {
+  .heading-courses{
+    font-size: 20px;
+    text-align: center;
+  } */
+  /* li h2{
+    font-size: 30px;
+    padding-right: 90px;
+  
+  }
+  .course h1 {
+    font-size: 20px;
+ } */
+ 
+  /* .course p {
+    margin: 8px 0;
+    text-align: left;
+    color: #a0a6ab;
+
+    font-size: 15px;
+    padding-left: 20px;
+ } */
+ /* .course li:last-child{ */
+  /* margin-left: 20%; */
+  /* margin-right: 50%; */
+  /* font-size: 12px;
+  letter-spacing: 2px;
+  padding-right: 50px; */
+ /* } */
+    
+/* } */
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { }
+ 
+@media all and (max-width: 480px) {
+  .heading-courses{
+    font-size: 20px;
+    text-align: center;
+  }
+  li button{
+    margin-bottom: 5rem;
+    font-size: 15px;
+    
+    
+
+ 
+
+   }
+ } 

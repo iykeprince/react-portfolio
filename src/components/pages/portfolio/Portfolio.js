@@ -1,39 +1,63 @@
+import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import '../portfolio/Portfolio.css'
-const Portfolio = ({ portfolio1, portfolio2, portfolio3, portfolio4 }) => {
+
+
+
+const Portfolio = ({ addCourseHandler }) => {
+    const history = useHistory();
+    const [title, setTitle] = useState('');
+    const [description, setDescription] = useState('');
+    const [body, setBody] = useState('');
+    const [price, setPrice] = useState('');
+    const [imageUrl, setImageUrl] = useState('');
+
+
+    const onChangeHandler = (e) => {
+        e.preventDefault();
+        if (title && description && body && imageUrl && price) {
+            const newCourse = { title, description, body, price, imageUrl };
+            addCourseHandler(newCourse);
+            history.replace('/');
+
+        } else {
+            console.log('empty values');
+        }
+    }
+
+
+
     return (
-        <div className="main" id="portfolio">
-            <h2>My Portfolio</h2>
-            <div className="wrap">
-                <div className="row">
-                    <div className="column">
-                        <div className="content">
-                            <img src={portfolio1} alt="portfolio1" style={{ width: '100%' }} />
-                            <h3>E-commerce Application</h3>
-                            <p>This mobile application is built on flutter with responsive designs</p>
+        <div className="bodys">
+            <div className="container">
+                <form onSubmit={onChangeHandler}>
+                    <div className="user-details">
+                        <div className="input-box">
+                            <span className="details">Title</span>
+                            <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+                        </div>
+                        <div className="input-box">
+                            <span className="details">ImageUrl</span>
+                            <input type="text" value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} />
+                        </div>
+                        <div className="input-box">
+                            <span className="details">Body</span>
+                            <textarea className="" id="" cols="50" rows="50" value={body} onChange={(e) => setBody(e.target.value)} ></textarea>
+                        </div>
+                        <div className="input-box">
+                            <span className="details">Description</span>
+                            <textarea className="" id="" cols="50" rows="50" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
                         </div>
                     </div>
-                    <div className="column">
-                        <div className="content">
-                            <img src={portfolio2} alt="portfolio2" style={{ width: '100%' }} />
-                            <h3>My Work</h3>
-                            <p>Lorem ipsum..</p>
-                        </div>
+                    <div className="input-box">
+                        <span className="details">Price</span>
+                        <input type="text" value={price} onChange={(e) => setPrice(e.target.value)} />
                     </div>
-                    <div className="column">
-                        <div className="content">
-                            <img src={portfolio3} alt="portfolio3" style={{ width: '100%' }} />
-                            <h3>My Work</h3>
-                            <p>Lorem ipsum..</p>
-                        </div>
+
+                    <div className="button">
+                        <input type="submit" value="Register" />
                     </div>
-                    <div className="column">
-                        <div className="content">
-                            <img src={portfolio4} alt="portfolio4" style={{ width: '100%' }} />
-                            <h3>My Work</h3>
-                            <p>Lorem ipsum..</p>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
 

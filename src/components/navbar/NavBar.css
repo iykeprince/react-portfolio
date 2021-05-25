@@ -72,7 +72,7 @@ nav{
 
 .menu-list li a:hover, 
 .menu-list li a.active{
-    border-bottom: 3px solid tomato;
+    /* border-bottom: 3px solid tomato; */
     /* transition: all 0.5s ease-in-out; */
 }
 @media screen and (max-width:600px){

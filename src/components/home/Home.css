@@ -3,6 +3,10 @@
     padding: 0;
 
 }
+/* .container{
+    background-color: #42444E;
+
+} */
 
 .hero h2{
     font-size: 30px;
@@ -51,19 +55,35 @@ button.btn{
     font-weight: bolder;
 
 }
+.heading-courses{
+    /* background-color: #42444E; */
+    padding: 20px 50px;
+    color: black;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+/* .hr-1 .half-width{
+    border: 0;
+    height: 1px;
+    size: 30px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+} */
 
 /* .container{ */
     /* height: 100vh; */
     /* overflow: hidden; */
   /* } */
 
-@media screen and (max-width:800px){
+@media screen and (max-width:598px){
     .hero-text{
-        position: absolute;
-        width: 70%;
+        text-align: center;
+        top: 40%;
+        left: 10%;
+        width: 80%;
     }
     h2{
-        font-size: 20px;
+        font-size: 50px;
     }
     h3{
         font-size: 15px ;
@@ -78,4 +98,17 @@ button.btn{
     }
 }
 
-@media screen and (max-width:600px){}
+@media screen and (max-width:359px){
+    .hero-text{
+        text-align: center;
+        top: 40%;
+        left: 10%;
+        width: 80%;
+     
+    }
+    .hero h2{
+        font-size: 20px;
+       
+    }
+}
+

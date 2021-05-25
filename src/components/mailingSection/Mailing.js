@@ -3,7 +3,7 @@ import '../mailingSection/Mailing.css';
 const Mailing = () => {
     return (
         <div>
-            <section class="join">
+            <section className="join">
                 <h2>Join our mailing list!</h2>
                 <p>We send out weekly tech related content. Sign up and take advanatage of it</p>
                 <form action="">
