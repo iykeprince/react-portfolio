@@ -2,11 +2,14 @@ import './Home.css';
 import '../pages/courses/Courses.css'
 import Team from '../team/Team';
 import CourseList from '../pages/courses/CourseList'
+import NavBar from '../navbar/NavBar';
 
 
 const Home = ({ courses }) => {
 
     return (
+        <>
+        <NavBar />
         <div className="home">
             <div className="hero-image">
                 <div className="hero-text">
@@ -24,6 +27,7 @@ const Home = ({ courses }) => {
             </section>
             <Team />
         </div>
+        </>
     )
 }
 
